@@ -1,0 +1,23 @@
+{
+  "name": "goit-js-hw-10-food-service-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikitaUstnov/goit-js-hw-10-food-service-PARCEL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikitaUstnov/goit-js-hw-10-food-service-PARCEL/issues"
+  },
+  "homepage": "https://github.com/NikitaUstnov/goit-js-hw-10-food-service-PARCEL#readme",
+  "dependencies": {
+    "handlebars": "^4.7.6"
+  }
+}
