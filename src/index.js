@@ -1,25 +1,20 @@
+import cardsEl from './menu.json';
+// import name from  './export.js';
+import swisher from './swich-menu';
+import foodCardsTpl from './template.hbs';
+console.log(foodCardsTpl);
 
-import name from  './export.js';
 
-// const Theme = {
-//     LIGHT: 'light-theme',
-//     DARK: 'dark-theme',
-//   };
 
-const body = document.querySelector('body');
-const onClickBlackTheme = document.querySelector('.theme-switch__control');
 
-onClickBlackTheme.addEventListener('change', changeFn)
 
-if (localStorage.getItem('body') == 'dark-theme') {
-body.classList.add('dark-theme');
-onClickBlackTheme.classList.add('checked')
-}
-function changeFn(p) {
-    body.classList.toggle('dark-theme');
-if (localStorage.getItem('body') == 'dark-theme') {
-localStorage.removeItem("body", "dark-theme");
-} else {
-localStorage.setItem("body", "dark-theme");
-}
-}
+// const cardsTemplate = cardsEl.map(({id, name, description, image, price, ingredients})=>{
+//        return 
+//     }).join('')
+
+
+// const templateMenuPiker = document.querySelector('.js-menu')
+// templateMenuPiker.insertAdjacentHTML("afterBegin", cardsTemplate)
+// console.log(templateMenuPiker)
+// console.log(cardsTemplate)
+
