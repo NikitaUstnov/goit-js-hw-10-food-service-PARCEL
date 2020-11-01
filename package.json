@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/NikitaUstnov/goit-js-hw-10-food-service-PARCEL/issues"
   },
-  "homepage": "https://github.com/NikitaUstnov/goit-js-hw-10-food-service-PARCEL#readme",
+  "homepage": "https://github.com/NikitaUstnov/goit-js-hw-10-food-service-PARCEL",
   "description": "",
   "devDependencies": {
     "gh-pages": "^3.1.0",
