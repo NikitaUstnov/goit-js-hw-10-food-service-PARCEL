@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build dist/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build -- --public-url=/goit-js-hw-10-food-service/",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/NikitaUstnov/goit-js-hw-10-food-service-PARCEL/issues"
   },
-  "homepage": "https://github.com/NikitaUstnov/goit-js-hw-10-food-service-PARCEL",
+  "homepage": "https://NikitaUstnov.github.io/goit-js-hw-10-food-service-PARCEL",
   "description": "",
   "devDependencies": {
     "gh-pages": "^3.1.0",
@@ -28,6 +30,7 @@
     "sass": "^1.27.0"
   },
   "dependencies": {
+    "build": "^0.1.4",
     "parcel-plugin-handlebars": "^0.4.4"
   }
 }
