@@ -3,8 +3,11 @@ const onClickBlackTheme = document.querySelector('.theme-switch__control');
 
 onClickBlackTheme.addEventListener('change', changeFn)
 
+
+
 if (localStorage.getItem('body') == 'dark-theme') {
 body.classList.add('dark-theme');
+checkBoxRef.checked == true;
 
 }
 function changeFn(p) {
