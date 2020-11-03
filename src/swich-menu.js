@@ -7,7 +7,7 @@ const blackThemeChangeBtn = document.querySelector('.theme-switch__toggle');
 blackThemeChangeBtn.addEventListener('change', changeBodyColor);
 
 if (localStorage.getItem('body') === 'dark-theme') {
-  body.classList.add('dark-theme');
+  bodyRef.classList.add('dark-theme');
   blackThemeChangeBtn.checked = true;
 } else {
   blackThemeChangeBtn.checked = false;
