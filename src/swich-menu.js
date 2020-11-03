@@ -1,19 +1,23 @@
 // menu swicher
 
-const body = document.querySelector('body');
-const onClickBlackTheme = document.querySelector('.theme-switch__toggle');
-onClickBlackTheme.addEventListener('change', changeFn);
+const bodyRef = document.querySelector('body');
+
+const blackThemeChangeBtn = document.querySelector('.theme-switch__toggle');
+
+blackThemeChangeBtn.addEventListener('change', changeBodyColor);
+
 if (localStorage.getItem('body') === 'dark-theme') {
   body.classList.add('dark-theme');
-  onClickBlackTheme.checked = true;
+  blackThemeChangeBtn.checked = true;
 } else {
-    onClickBlackTheme.checked = false;
- }
-function changeFn(p) {
-    body.classList.toggle('dark-theme');
-if (localStorage.getItem('body') === 'dark-theme') {
-  localStorage.removeItem("body");
-} else {
-  localStorage.setItem("body", "dark-theme");
+  blackThemeChangeBtn.checked = false;
 }
+
+function changeBodyColor(p) {
+  bodyRef.classList.toggle('dark-theme');
+  if (localStorage.getItem('body') === 'dark-theme') {
+    localStorage.removeItem('body');
+  } else {
+    localStorage.setItem('body', 'dark-theme');
+  }
 }
